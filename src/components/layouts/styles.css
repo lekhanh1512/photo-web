@@ -1,0 +1,45 @@
+.nav-link {
+  display: flex; /* Sử dụng flexbox */
+  position: relative;
+  text-decoration: none; /* Bỏ gạch chân mặc định */
+  color: #6e563d; /* Màu chữ */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px; /* Khoảng cách từ chữ đến gạch chân */
+  height: 2px; /* Độ dày của gạch chân */
+  background-color: #b49c84; /* Màu gạch chân */
+  transform: scaleX(0); /* Bắt đầu với độ dài 0 */
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển tiếp */
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1); /* Mở rộng gạch chân khi hover */
+}
+
+.foot-link {
+  position: relative;
+  text-decoration: none; /* Bỏ gạch chân mặc định */
+  color: #dfe2e6; /* Màu chữ */
+}
+
+.foot-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px; /* Khoảng cách từ chữ đến gạch chân */
+  height: 2px; /* Độ dày của gạch chân */
+  background-color: #c6c9c6; /* Màu gạch chân */
+  transform: scaleX(0); /* Bắt đầu với độ dài 0 */
+  transition: transform 0.3s ease; /* Hiệu ứng chuyển tiếp */
+}
+
+.foot-link:hover::after {
+  transform: scaleX(1); /* Mở rộng gạch chân khi hover */
+}
+
