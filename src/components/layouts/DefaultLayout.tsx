@@ -1,8 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer";
 import Header from "./Header";
-import SideBtn from "./SideBtn";
-import Toolbar from "./Toolbar";
+
 
 const DefaultLayout = () => {
   return (
